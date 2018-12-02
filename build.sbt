@@ -13,4 +13,8 @@ libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.11"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % Test
 
+libraryDependencies += "com.typesafe.akka" %% "akka-slf4j" % "2.5.18"
+
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3" 
+
 mainClass in assembly := Some("com.akka.actor.perf.ActorSystemPerf")

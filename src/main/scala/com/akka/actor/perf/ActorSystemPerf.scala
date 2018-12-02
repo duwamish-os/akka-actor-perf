@@ -9,7 +9,8 @@ object ActorSystemPerf {
   implicit private val actorSystem: ActorSystem = ActorSystem.create("nlu-actor-system", ConfigFactory.parseString(
     """
       |akka {
-      |  loglevel = "DEBUG"
+      |  loglevel = "OFF"
+      |  loggers = ["akka.event.slf4j.Slf4jLogger"]
       |}
     """.stripMargin))
 
